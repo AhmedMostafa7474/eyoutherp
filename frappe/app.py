@@ -359,8 +359,8 @@ def serve(
 
 		application = StaticDataMiddleware(application, {"/files": str(os.path.abspath(sites_path))})
 
-	application.debug = True
-	application.config = {"SERVER_NAME": "localhost:8000"}
+	application.debug = False
+	application.config = {"SERVER_NAME": "eyoutherp.herokuapp.com"}
 
 	log = logging.getLogger("werkzeug")
 	log.propagate = False
